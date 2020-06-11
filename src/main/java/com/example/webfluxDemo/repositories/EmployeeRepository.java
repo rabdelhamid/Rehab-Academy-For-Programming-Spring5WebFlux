@@ -18,6 +18,7 @@ import reactor.core.publisher.Flux;
  * @author user
  */
 //https://www.callicoder.com/java-8-completablefuture-tutorial/
+//https://www.baeldung.com/spring-data-mongodb-tailable-cursors
 @Repository
 public interface EmployeeRepository extends ReactiveCrudRepository<Employees, Integer>{
     public Flux<Employees> findByName(String name);
